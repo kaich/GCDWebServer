@@ -49,7 +49,12 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+@interface GCDWebUploader()
+@property(nonatomic, strong) NSBundle * siteBundle;
+@end
+
 @interface GCDWebUploader (Methods)
+
 - (nullable GCDWebServerResponse*)listDirectory:(GCDWebServerRequest*)request;
 - (nullable GCDWebServerResponse*)downloadFile:(GCDWebServerRequest*)request;
 - (nullable GCDWebServerResponse*)uploadFile:(GCDWebServerMultiPartFormRequest*)request;
@@ -66,11 +71,7 @@ NS_ASSUME_NONNULL_END
 
 - (instancetype)initWithUploadDirectory:(NSString*)path {
   if ((self = [super init])) {
-    NSString* bundlePath = [[NSBundle bundleForClass:[GCDWebUploader class]] pathForResource:@"GCDWebUploader" ofType:@"bundle"];
-    if (bundlePath == nil) {
-      return nil;
-    }
-    NSBundle* siteBundle = [NSBundle bundleWithPath:bundlePath];
+    NSBundle* siteBundle = [self getSiteBundle];
     if (siteBundle == nil) {
       return nil;
     }
@@ -244,6 +245,24 @@ NS_ASSUME_NONNULL_END
                  }];
   }
   return self;
+}
+
+-(NSBundle *) getSiteBundle {
+  if(self.siteBundle) {
+    return self.siteBundle;
+  }
+  NSString* bundlePath = [[NSBundle bundleForClass:[GCDWebUploader class]] pathForResource:@"GCDWebUploader" ofType:@"bundle"];
+  if (bundlePath == nil) {
+    return nil;
+  }
+  NSBundle* siteBundle = [NSBundle bundleWithPath:bundlePath];
+  self.siteBundle = siteBundle;
+  return siteBundle;
+}
+
+-(NSString *) localized:(NSString *) key {
+  NSBundle* siteBundle = [self getSiteBundle];
+  return [siteBundle localizedStringForKey:key value:@"" table:nil];
 }
 
 @end

@@ -18,3 +18,22 @@
 "MOVE_ITEM" = "移动文件";
 "PLEASE_ENTER_THE_NEW_LOCATION_FOR_THIS_ITEM" = "请输入此文件要移动到的位置：";
 "MOVE" = "移动";
+
+// 提示
+"FILE_NOT_EXIST" = "\"%@\" 不存在";
+"FILE_NOT_DIRECTORY" = "\"%@\" 不是文件夹";
+"DIRECTORY_NOT_ALLOW" = "检索的文件 \"%@\" 名称不被允许";
+"FAIL_LIST_DIRECTORY" = "检索文件夹 \"%@\" 失败";
+"DOWNLOADING_FILE_NAME_NOT_ALLOW" = "下载 \"%@\" 的文件名不被允许";
+"UPLOAD_FILE_NAME_NOT_ALLOW" = "上传 \"%@\" 的文件名不被允许";
+"UPLOADING_NOT_PERMIT" = "无法上传 \"%@\" 到 \"%@\"";
+"FAIL_MOVE_UPLOADED_FILE" = "移动上传的文件到 \"%@\" 失败";
+"MOVE_FROM_ITEM_NAME_NOT_ALLOW" = "移动 \"%@\" 的文件名不被允许";
+"MOVE_TO_ITEM_NAME_NOT_ALLOW" = "向 \"%@\" 移动的文件名不被允许";
+"FAIL_MOVE" = "从 \"%@\" 移动到 \"%@\" 失败";
+"DELETE_ITEM_NAME_NOT_ALLOW" = "要删除的文件 \"%@\" 文件名不被允许";
+"DELETE_NOT_PERMIT" = "无法删除 \"%@\"";
+"FAIL_DELETE" = "删除 \"%@\" 失败";
+"CREATE_DIRECTORY_NAME_NOT_ALLOW" = "创建文件夹的文件名 \"%@\" 不被允许";
+"CREATE_DIRECTORY_NOT_PERMIT" = "无法创建文件夹 \"%@\"";
+"FAIL_CREATE_DIRECTORY" = "创建文件夹 \"%@\" 失败";

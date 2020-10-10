@@ -17,3 +17,22 @@
 "MOVE_ITEM" = "Move Item";
 "PLEASE_ENTER_THE_NEW_LOCATION_FOR_THIS_ITEM" = "Please enter the new location for this item:";
 "MOVE" = "Move";
+
+// Message
+"FILE_NOT_EXIST" = "\"%@\" does not exist";
+"FILE_NOT_DIRECTORY" = "\"%@\" is not a directory";
+"DIRECTORY_NOT_ALLOW" = "Listing directory name \"%@\" is not allowed";
+"FAIL_LIST_DIRECTORY" = "Failed listing directory \"%@\"";
+"DOWNLOADING_FILE_NAME_NOT_ALLOW" = "Downlading file name \"%@\" is not allowed";
+"UPLOAD_FILE_NAME_NOT_ALLOW" = "Uploaded file name \"%@\" is not allowed";
+"UPLOADING_NOT_PERMIT" = "Uploading file \"%@\" to \"%@\" is not permitted";
+"FAIL_MOVE_UPLOADED_FILE" = "Failed moving uploaded file to \"%@\"";
+"MOVE_FROM_ITEM_NAME_NOT_ALLOW" = "Moving from item name \"%@\" is not allowed";
+"MOVE_TO_ITEM_NAME_NOT_ALLOW" = "Moving to item name \"%@\" is not allowed";
+"FAIL_MOVE" = "Failed moving \"%@\" to \"%@\"";
+"DELETE_ITEM_NAME_NOT_ALLOW" = "Deleting item name \"%@\" is not allowed";
+"DELETE_NOT_PERMIT" = "Deleting \"%@\" is not permitted";
+"FAIL_DELETE" = "Failed deleting \"%@\"";
+"CREATE_DIRECTORY_NAME_NOT_ALLOW" = "Creating directory name \"%@\" is not allowed";
+"CREATE_DIRECTORY_NOT_PERMIT" = "Creating directory \"%@\" is not permitted";
+"FAIL_CREATE_DIRECTORY" = "Failed creating directory \"%@\"";
