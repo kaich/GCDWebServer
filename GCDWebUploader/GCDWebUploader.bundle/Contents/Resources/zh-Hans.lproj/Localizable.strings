@@ -1,0 +1,20 @@
+// 主页
+"PROLOGUE" = "<p>该网页用户方便同一WiFi下传输加密的Keepass文件，方便进行电脑端和手机端同步</p>";
+"UPLOAD"        = "上传文件";
+"CREATE_FOLDER" = "新建文件夹";
+"REFRESH"       = "刷新";
+"EPILOGUE" = "<p>如果有任何问题欢迎反馈</p>";
+"FOOTER_FORMAT" = "%@ %@";
+
+// 通用
+"CANCEL" = "取消";
+
+// 创建文件夹
+"PLEASE_ENTER_THE_NEME_OF_THE_FOLDER_TO_BE_CREATED" = "请输入要创建的文件夹名：";
+"UNTITLED_FOLDER" = "未命名文件夹";
+"CREATE" = "创建";
+
+// 移动文件
+"MOVE_ITEM" = "移动文件";
+"PLEASE_ENTER_THE_NEW_LOCATION_FOR_THIS_ITEM" = "请输入此文件要移动到的位置：";
+"MOVE" = "移动";

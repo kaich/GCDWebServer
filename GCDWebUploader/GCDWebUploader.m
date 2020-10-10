@@ -130,12 +130,66 @@ NS_ASSUME_NONNULL_END
 #endif
                      footer = [NSString stringWithFormat:[siteBundle localizedStringForKey:@"FOOTER_FORMAT" value:@"" table:nil], name, version];
                    }
+      
+      
+                   NSString *key = @"";
+                   NSString *upload = nil; key = @"UPLOAD";
+                   if ([siteBundle localizedStringForKey:key value:@"" table:nil]) {
+                     upload = [siteBundle localizedStringForKey:key value:@"" table:nil];
+                   }
+                   NSString *createFolder = nil; key = @"CREATE_FOLDER";
+                   if ([siteBundle localizedStringForKey:key value:@"" table:nil]) {
+                     createFolder = [siteBundle localizedStringForKey:key value:@"" table:nil];
+                   }
+                   NSString *refresh = nil; key = @"REFRESH";
+                   if ([siteBundle localizedStringForKey:key value:@"" table:nil]) {
+                     refresh = [siteBundle localizedStringForKey:key value:@"" table:nil];
+                   }
+                   NSString *cancel = nil; key = @"CANCEL";
+                   if ([siteBundle localizedStringForKey:key value:@"" table:nil]) {
+                     cancel = [siteBundle localizedStringForKey:key value:@"" table:nil];
+                   }
+                   NSString *createFolderDescription = nil; key = @"PLEASE_ENTER_THE_NEME_OF_THE_FOLDER_TO_BE_CREATED";
+                   if ([siteBundle localizedStringForKey:key value:@"" table:nil]) {
+                     createFolderDescription = [siteBundle localizedStringForKey:key value:@"" table:nil];
+                   }
+                   NSString *untitledFolder = nil; key = @"UNTITLED_FOLDER";
+                   if ([siteBundle localizedStringForKey:key value:@"" table:nil]) {
+                     untitledFolder = [siteBundle localizedStringForKey:key value:@"" table:nil];
+                   }
+                   NSString *create = nil; key = @"CREATE";
+                   if ([siteBundle localizedStringForKey:key value:@"" table:nil]) {
+                     create = [siteBundle localizedStringForKey:key value:@"" table:nil];
+                   }
+                   NSString *moveItem = nil; key = @"MOVE_ITEM";
+                   if ([siteBundle localizedStringForKey:key value:@"" table:nil]) {
+                     moveItem = [siteBundle localizedStringForKey:key value:@"" table:nil];
+                   }
+                   NSString *moveItemDescription = nil; key = @"PLEASE_ENTER_THE_NEW_LOCATION_FOR_THIS_ITEM";
+                   if ([siteBundle localizedStringForKey:key value:@"" table:nil]) {
+                     moveItemDescription = [siteBundle localizedStringForKey:key value:@"" table:nil];
+                   }
+                   NSString *move = nil; key = @"MOVE";
+                   if ([siteBundle localizedStringForKey:key value:@"" table:nil]) {
+                     move = [siteBundle localizedStringForKey:key value:@"" table:nil];
+                   }
+             
                    return [GCDWebServerDataResponse responseWithHTMLTemplate:(NSString*)[siteBundle pathForResource:@"index" ofType:@"html"]
                                                                    variables:@{
                                                                      @"device" : device,
                                                                      @"title" : title,
                                                                      @"header" : header,
                                                                      @"prologue" : prologue,
+                                                                     @"upload": upload,
+                                                                     @"create_folder": createFolder,
+                                                                     @"refresh": refresh,
+                                                                     @"cancel": cancel,
+                                                                     @"create_folder_description": createFolderDescription,
+                                                                     @"untitled_folder": untitledFolder,
+                                                                     @"create": create,
+                                                                     @"move_item": moveItem,
+                                                                     @"move_item_description": moveItemDescription,
+                                                                     @"move": move,
                                                                      @"epilogue" : epilogue,
                                                                      @"footer" : footer
                                                                    }];

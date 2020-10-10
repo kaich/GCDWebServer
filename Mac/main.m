@@ -137,7 +137,7 @@ typedef enum {
 int main(int argc, const char* argv[]) {
   int result = -1;
   @autoreleasepool {
-    Mode mode = kMode_WebServer;
+    Mode mode = kMode_WebUploader;
     BOOL recording = NO;
     NSString* rootDirectory = NSHomeDirectory();
     NSString* testDirectory = nil;
